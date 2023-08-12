@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onclick</title>
     <style type="text/css">
+        
+        
         body{
-            background-color: #000000;
-            background-image: url(./Assests/Images/pakflag.jpg);
-            background-repeat: no-repeat;
-            background-size: 800px;
+            background-color: #020202;
+            
+           
+           
         }
+
+
 
         button{
             font-family: sans-serif;
@@ -18,17 +22,22 @@
             padding: 15px 30px;
             font-size: 20px;
             outline: none;
-            margin: 10px;
+            
         }
 
-        #btn {
-            background-color: rgb(255, 0, 0);
-            color: #f8f9f9;
-            box-shadow: .5px .5px 1px 2px #000000;            
+        #button-kabaap{
+            display: flex;
+            justify-content: center; /* Add this line to center the button horizontally */
+            align-items: center; /* Add this line to center the button vertically */
+            height: 100vh; /* Add this line to make sure the button is vertically centered */
+            background-color: #020202;
+            
         }
+
+               
         button {
         --glow-color: rgb(217, 176, 255);
-        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --glow-spread-color: rgba(235, 52, 107, 0.781);
  -      -enhanced-glow-color: rgb(231, 206, 255);
          --btn-color: rgb(100, 61, 136);
         border: .25em solid var(--glow-color);
@@ -78,8 +87,9 @@ button:active {
     </style>
 </head>
 <body>
-    <button id="button">Pakistan Zindabad</button>
-
+    <div id="button-kabaap">
+    <button id="button">Show a Dialog BOX</button>
+    </div>
 
     <script type="text/javascript">
         document.getElementById("button").onclick = function() {
